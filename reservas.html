@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservas</title>
 </head>
+
 <body>
-        <header>
+    <header>
         <span>ProzGourmet</span>
         <h2>ProzGourmet</h2>
         <div>
@@ -16,6 +18,41 @@
             <button><a href="reservas.html">Reservas</a></button>
             <button><a href="contato.html">Contato</a></button>
         </div>
+        <h1>Reservas</h1>
+        <p>Complete suas informações</p>
+        <br>
+
+        <form>
+            <fieldset>
+                <div>
+                    <label>Nome:</label>
+                    <input type="text" name="nome" id="nome">
+                </div>
+                <br>
+                <div>
+                    <label>Email:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <br> 
+                <div><label>Tel:</label>
+                    <input type="tel" name="tel" id="tel">
+                </div>
+                <br>
+                <div>
+                    <label>Mesas:</label>
+                    <select id="Mesas">
+                        <option selected disabled value="">Selecione</option>
+                        <option>Mesa 01</option>
+                        <option>Mesa 02</option>
+                        <option>Mesa 03</option>
+                        <option>Mesa 04</option>
+                    </select>
+                </div>
+                                
+            </fieldset>
+            <br>
+            <button type="submit">Concluir</button>
+        </form>
     </header>
 
     <main></main>
@@ -28,6 +65,7 @@
             <li>Linkedin</li>
         </ul>
     </footer>
-    
+
 </body>
+
 </html>
