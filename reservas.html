@@ -18,43 +18,53 @@
             <button><a href="reservas.html">Reservas</a></button>
             <button><a href="contato.html">Contato</a></button>
         </nav>
-        <h1>Reservas</h1>
-        <p>Complete suas informações</p>
-
-
+        
     </header>
 
     <main>
-        <form>
-            <fieldset>
-                <div>
-                    <label>Nome:</label>
-                    <input type="text" name="nome" id="nome">
-                </div>
-                <br>
-                <div>
-                    <label>Email:</label>
-                    <input type="email" name="email" id="email">
-                </div>
-                <br>
-                <div><label>Tel:</label>
-                    <input type="tel" name="tel" id="tel">
-                </div>
-                <br>
-                <div>
-                    <label>Mesas:</label>
-                    <select id="Mesas">
-                        <option selected disabled value="">Selecione</option>
-                        <option>Mesa 01</option>
-                        <option>Mesa 02</option>
-                        <option>Mesa 03</option>
-                        <option>Mesa 04</option>
-                    </select>
-                </div>
+        <h1 align="center">Reservas</h1>
+        <br>
+        <h4 align="center">Faça sua reserva</h4>
+        <br>
 
-            </fieldset>
+        <form align="center">
+
+
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome">
+            </div>
             <br>
-            <button type="submit">Concluir</button>
+            <div>
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" name="sobrenome" id="sobrenome">
+            </div>
+            <br>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <br>
+            <div>
+                <label for="tel">Tel:</label>
+                <input type="tel" name="tel" id="tel">
+            </div>
+            <br>
+            <div>
+                <label>Mesas:</label>
+                <select id="Mesas">
+                    <option selected disabled value="">Selecione</option>
+                    <option>Mesa 01</option>
+                    <option>Mesa 02</option>
+                    <option>Mesa 03</option>
+                    <option>Mesa 04</option>
+                    <option>Mesa 05</option>
+                </select>
+            </div>
+
+
+            <br>
+            <button type="submit">Enviar</button>
         </form>
     </main>
 
