@@ -4,43 +4,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/header-footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./script.js" defer></script>
     <title>Menu</title>
 </head>
 
 <body>
-    <header>
-        <span>ProzGourmet</span>
+    <header class="header">
 
         <nav>
-            <button><a href="index.html">Página Inicial</a></button>
-            <button><a href="menu.html">Menu</a></button>
-            <button><a href="sobre_nos.html">Sobre Nós</a></button>
-            <button><a href="reservas.html">Reservas</a></button>
-            <button><a href="contato.html">Contato</a></button>
+            <a class="logo" href="/">Proz Gourmet</a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+
+                <li>
+                    <a href="./index.html">Início</a>
+                </li>
+                <li>
+                    <a href="./menu.html">Menu</a>
+                </li>
+                <li>
+                    <a href="./reservas.html">Reservas</a>
+                </li>
+                <li>
+                    <a href="./sobre_nos.html">Sobre</a>
+                </li>
+                <li>
+                    <a href="./contato.html">Contato</a>
+                </li>
+            </ul>
         </nav>
+
     </header>
 
 
     <main>
-        <h2>Cardápio</h2>
 
-        <div>
-            <a href="entrada.html"><img src="./img/img-menu/menu-entrada.jpeg" alt="Menu Entrada" height="450"></a>
-            <a href="prato_principal.html"><img src="./img/img-menu/menu-prato.jpeg" alt="Menu Prato Principal" height="450"></a>
-            <a href="bebidas.html"><img src="./img/img-menu/menu-bebida.jpeg" alt="Menu Bebidas" height="450"></a>
-            <a href="sobremesa.html"><img src="./img/img-menu/menu-sobremesa.jpeg" alt="Menu Sobremesas" height="450"></a>
-        </div>
+        <h2>Nosso Menu</h2>
 
+        <section>
+            <div class="responsive">
+                <a href="entrada.html"><img src="./img/img-menu/menu-entrada.jpeg" alt="Menu Entrada"></a>
+            </div>
+            <div class="responsive">
+                <a href="prato_principal.html"><img src="./img/img-menu/menu-prato.jpeg" alt="Menu Prato Principal"></a>
+            </div>
+
+            <div class="responsive">
+                <a href="bebidas.html"><img src="./img/img-menu/menu-bebida.jpeg" alt="Menu Bebidas"></a>
+            </div>
+            <div class="responsive">
+                <a href="sobremesa.html"><img src="./img/img-menu/menu-sobremesa.jpeg" alt="Menu Sobremesas"></a>
+            </div>
+        </section>
 
     </main>
 
 
+
     <footer>
-        <ul>
-            <li>Facebook</li>
-            <li>Instagram</li>
-            <li>Linkedin</li>
-        </ul>
+        <div id="footer-content">
+            <div id="footer-contacts">
+
+                <br>
+                <div id="footer-social-media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Blog</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Receitas</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Dicas</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Trilha Sonora</a>
+                </li>
+            </ul>
+            <ul class="footer-list">
+                <li>
+                    <h3>Produtos</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Vinicula</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Hortaliças</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Preparo</a>
+                </li>
+            </ul>
+
+            <div id="footer-subscribe">
+                <h3>Newsletter</h3>
+                <p>
+                    Para mais informações.
+                </p>
+
+                <div id="input-group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer-copyrigth">
+            &#169
+            ProzGourmet
+
+        </div>
+
+
     </footer>
 
 </body>

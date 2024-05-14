@@ -4,67 +4,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/cardapio.css">
+    <link rel="stylesheet" href="./css/header-footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="./script.js" defer></script>
     <title>Bebidas</title>
 </head>
 
 <body>
     <header>
-        <span>ProzGourmet</span>
 
         <nav>
-            <button><a href="index.html">Página Inicial</a></button>
-            <button><a href="menu.html">Menu</a></button>
-            <button><a href="sobre_nos.html">Sobre Nós</a></button>
-            <button><a href="reservas.html">Reservas</a></button>
-            <button><a href="contato.html">Contato</a></button>
+            <a class="logo" href="/">Proz Gourmet</a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+
+                <li>
+                    <a href="./index.html">Início</a>
+                </li>
+                <li>
+                    <a href="./menu.html" m>Menu</a>
+                </li>
+                <li>
+                    <a href="./reservas.html">Reservas</a>
+                </li>
+                <li>
+                    <a href="./sobre_nos.html">Sobre</a>
+                </li>
+                <li>
+                    <a href="./contato.html">Contato</a>
+                </li>
+            </ul>
         </nav>
+
     </header>
 
     <main>
         <h2>CARTA DE VINHOS</h2>
-        <img src="./img/img-bebidas/vinho-Aura-del_Sol.jpeg" alt="Vinho Aura del Sol" height="500px">
-        <p>O vinho chileno <strong>Aura del Sol</strong> é uma expressão encantadora da região vinícola do Vale
-            Central. Combinando uvas cuidadosamente selecionadas,
-            este vinho tinto revela notas intensas de frutas vermelhas maduras e sutis nuances de especiarias. Sua
-            textura suave e final persistente tornam-no uma escolha
-            excepcional para acompanhar pratos gourmet em nosso restaurante." </p>
 
-        <img src="./img/img-bebidas/vinho-Eclat-de_la_lune.jpeg" alt="Vinho Éclat de La Lune" height="500px">
-        <p>O vinho <strong>Éclat de Lune</strong> é uma expressão encantadora da região vinícola francesa. Este vinho
-            branco revela uma palete de sabores
-            frescos e frutados, com notas sutis de flores brancas e frutas cítricas. Sua textura é refinada e
-            equilibrada, ideal para acompanhar pratos delicados e refinados.
-            "Éclat de Lune" é a escolha perfeita para momentos especiais e refeições elegantes. </p>
+        <section>
 
-        <img src="./img/img-bebidas/vinho-riserva-doro.jpeg" alt="Vinho Riverva D'Oro" height="500px">
-        <p>O italiano <strong>Riserva d'Oro</strong> é um vinho de prestígio, conhecido por sua riqueza e
-            complexidade. Produzido nas colinas ensolaradas da região da Toscana,
-            este vinho tinto exibe um caráter encorpado com notas marcantes de frutas escuras, especiarias sutis e um
-            toque de baunilha. Sua cor profunda e aroma sedutor prenunciam uma
-            experiência sensorial única, ideal para acompanhar pratos refinados e momentos especiais." </p>
+            <img src="./img/img-bebidas/vinho-Aura-del_Sol.jpeg" alt="Vinho Aura del Sol" id="vinho">
+            <div id="text-drink">
 
-        <img src="./img/img-bebidas/vinho-velluto-dorato.jpeg" alt="Vinho Velluto Dorado" height="500px">
-        <p>Vindo da Argentina e muito bem conceituado, <strong>Velluto Dorado</strong> é conhecido por sua rica história e perfil de sabor único, sendo um favorito entre
-            os entusiastas do vinho. Estou especialmente interessado em saber sobre sua cor, aroma, sabor e quaisquer
-            características notáveis que o diferenciem</p>
+                <p>O vinho chileno <strong>Aura del Sol</strong> é uma expressão encantadora da região vinícola do Vale
+                    Central. Combinando uvas cuidadosamente selecionadas,
+                    este vinho tinto revela notas intensas de frutas vermelhas maduras e sutis nuances de especiarias. Sua
+                    textura suave e final persistente tornam-no uma escolha
+                    excepcional para acompanhar pratos gourmet em nosso restaurante." </p>
+            </div>
 
-        <img src="./img/img-bebidas/vinho-fuego-estelar.jpeg" alt="Vinho Fuego Estelár" height="500px">
-        <p>Experimente o encanto do Chile com o vinho <strong>Fuego Estelár</strong>, uma expressão vibrante da região do
-            Vale Central. Este vinho tinto seduz com seus aromas intensos de frutas vermelhas maduras, como cerejas e
-            amoras, complementados por sutis notas de especiarias. Na boca, é macio e equilibrado, com taninos suaves
-            que levam a um final persistente e agradável. Ideal para acompanhar uma variedade de pratos, desde carnes
-            grelhadas até massas e queijos suaves. Desfrute do sabor cativante deste vinho chileno e deixe-se levar
-            pelas estrelas desta terra distante.</p>
+            <img src="./img/img-bebidas/vinho-Eclat-de_la_lune.jpeg" alt="Vinho Éclat de La Lune" id="vinho">
+            <div id="text-drink">
+
+                <p>O vinho <strong>Éclat de Lune</strong> é uma expressão encantadora da região vinícola francesa. Este vinho
+                    branco revela uma palete de sabores
+                    frescos e frutados, com notas sutis de flores brancas e frutas cítricas. Sua textura é refinada e
+                    equilibrada, ideal para acompanhar pratos delicados e refinados.
+                    "Éclat de Lune" é a escolha perfeita para momentos especiais e refeições elegantes. </p>
+            </div>
+
+            <img src="./img/img-bebidas/vinho-riserva-doro.jpeg" alt="Vinho Riverva D'Oro" id="vinho">    
+            <div id="text-drink">
+
+                <p>O italiano <strong>Riserva d'Oro</strong> é um vinho de prestígio, conhecido por sua riqueza e
+                    complexidade. Produzido nas colinas ensolaradas da região da Toscana,
+                    este vinho tinto exibe um caráter encorpado com notas marcantes de frutas escuras, especiarias sutis e um
+                    toque de baunilha. Sua cor profunda e aroma sedutor prenunciam uma
+                    experiência sensorial única, ideal para acompanhar pratos refinados e momentos especiais." </p>
+            </div>
+
+            <img src="./img/img-bebidas/vinho-velluto-dorato.jpeg" alt="Vinho Velluto Dorado" id="vinho">
+            <div id="text-drink">
+
+                <p>Vindo da Argentina e muito bem conceituado, <strong>Velluto Dorado</strong> é conhecido por sua rica história
+                    e perfil de sabor único, sendo um favorito entre
+                    os entusiastas do vinho. Estou especialmente interessado em saber sobre sua cor, aroma, sabor e quaisquer
+                    características notáveis que o diferenciem</p>
+            </div>
+
+            <img src="./img/img-bebidas/vinho-fuego-estelar.jpeg" alt="Vinho Fuego Estelár" id="vinho">
+            <div id="text-drink">
+                
+                <p>Experimente o encanto do Chile com o vinho <strong>Fuego Estelár</strong>, uma expressão vibrante da região
+                    do
+                    Vale Central. Este vinho tinto seduz com seus aromas intensos de frutas vermelhas maduras, como cerejas e
+                    amoras, complementados por sutis notas de especiarias. Na boca, é macio e equilibrado, com taninos suaves
+                    que levam a um final persistente e agradável. Ideal para acompanhar uma variedade de pratos, desde carnes
+                    grelhadas até massas e queijos suaves. Desfrute do sabor cativante deste vinho chileno e deixe-se levar
+                    pelas estrelas desta terra distante.</p>
+            </div>
+        </section>
 
     </main>
 
 
     <footer>
-        <ul>
-            <li>Facebook</li>
-            <li>Instagram</li>
-            <li>Linkedin</li>
-        </ul>
+        <div id="footer-content">
+            <div id="footer-contacts">
+
+                <br>
+                <div id="footer-social-media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Blog</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Receitas</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Dicas</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Trilha Sonora</a>
+                </li>
+            </ul>
+            <ul class="footer-list">
+                <li>
+                    <h3>Produtos</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Vinicula</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Hortaliças</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Preparo</a>
+                </li>
+            </ul>
+
+            <div id="footer-subscribe">
+                <h3>Subscribe</h3>
+                <p>
+                    Assine nossa newsletter
+                </p>
+
+                <div id="input-group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer-copyrigth">
+            &#169
+            ProzGourmet
+
+        </div>
+
+
     </footer>
 
 </body>

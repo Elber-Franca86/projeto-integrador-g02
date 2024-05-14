@@ -1,47 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/header-footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./script.js" defer></script>
     <title>ProzGourmet</title>
 </head>
+
 <body>
     <header>
-        <span>ProzGourmet</span>
 
         <nav>
-            <button><a href="index.html">Página Inicial</a></button>
-            <button><a href="menu.html">Menu</a></button>
-            <button><a href="sobre_nos.html">Sobre Nós</a></button>
-            <button><a href="reservas.html">Reservas</a></button>
-            <button><a href="contato.html">Contato</a></button>
+            <a class="logo" href="/">Proz Gourmet</a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+
+                <li>
+                    <a href="./index.html">Início</a>
+                </li>
+                <li>
+                    <a href="./menu.html" m>Menu</a>
+                </li>
+                <li>
+                    <a href="./reservas.html">Reservas</a>
+                </li>
+                <li>
+                    <a href="./sobre_nos.html">Sobre</a>
+                </li>
+                <li>
+                    <a href="./contato.html">Contato</a>
+                </li>
+            </ul>
         </nav>
-        
+
     </header>
 
 
     <main>
-        <section>
-            <p>O <strong>ProzGourmet</strong> é um restaurante que oferece uma experiência gastronômica única e inesquecível.<br>
-                 Nossa equipe apaixonada por culinária utiliza os ingredientes mais frescos e sazonais para criar pratos
-                  deliciosos e inovadores.</p>
+        <!-- <section>
 
-            <img src="./img/Foto restaurante 1.jpg" alt="Imagem restaurante" height="300px">
-            <img src="./img/Foto restaurante 2.jpg" alt="Imagem restaurante" height="300px">
-            <img src="./img/Foto restaurante 3.jpg" alt="Imagem restaurante" height="300px">
-            <img src="./img/Foto restaurante 4.jpg" alt="Imagem restaurante" height="300px">
-        </section>
+            <div id="text">
+                <p>O <strong>ProzGourmet</strong> é um restaurante que oferece uma experiência gastronômica única e
+                    inesquecível.<br>
+                    Nossa equipe apaixonada por culinária utiliza os ingredientes mais frescos e sazonais para criar
+                    pratos
+                    deliciosos e inovadores.</p>
+
+
+
+                <div class="img-rest">
+                    <div class="slide first">
+                        <img src="./img/Foto restaurante 1.jpg" alt="Imagem restaurante">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/Foto restaurante 2.jpg" alt="Imagem restaurante">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/Foto restaurante 3.jpg" alt="Imagem restaurante">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/Foto restaurante 4.jpg" alt="Imagem restaurante">
+                    </div>
+                </div>
+
+
+
+
+
+        </section> -->
     </main>
 
 
     <footer>
-        <ul>
-            <li>Facebook</li>
-            <li>Instagram</li>
-            <li>Linkedin</li>
-        </ul>
+        <div id="footer-content">
+            <div id="footer-contacts">
+
+                <br>
+                <div id="footer-social-media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Blog</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Receitas</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Dicas</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Trilha Sonora</a>
+                </li>
+            </ul>
+            <ul class="footer-list">
+                <li>
+                    <h3>Produtos</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Vinicula</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Hortaliças</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Preparo</a>
+                </li>
+            </ul>
+
+            <div id="footer-subscribe">
+                <h3>Subscribe</h3>
+                <p>
+                    Assine nossa newsletter
+                </p>
+
+                <div id="input-group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer-copyrigth">
+            &#169
+            ProzGourmet
+
+        </div>
+
+
     </footer>
 
 </body>
+
 </html>

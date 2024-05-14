@@ -1,0 +1,53 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/*CONTEÚDO*/
+main {
+    background-image: url(../img/textura-03.jpg);
+    padding-top: 3vh;
+    padding-bottom: 10vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+
+}
+
+h2 {
+    font-size: 26px;
+    text-align: center;
+    padding-bottom: 3vh;
+}
+
+
+section {
+    display: flex;
+    margin-left: 10px;
+    padding: 1vh;
+    margin: 1vh;
+}
+
+.responsive {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.responsive img {
+    width: 100%;
+    height: auto;
+    border-radius: 10%;
+}
+
+@media screen and (max-width: 850px) {
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu img {
+        width: 75%;
+        height: auto;
+    }
+}

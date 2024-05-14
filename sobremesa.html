@@ -4,64 +4,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/cardapio.css">
+    <link rel="stylesheet" href="./css/header-footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./script.js" defer></script>
     <title>Sobremesas</title>
 </head>
 
 <body>
     <header>
-        <span>ProzGourmet</span>
-
         <nav>
-            <button><a href="index.html">Página Inicial</a></button>
-            <button><a href="menu.html">Menu</a></button>
-            <button><a href="sobre_nos.html">Sobre Nós</a></button>
-            <button><a href="reservas.html">Reservas</a></button>
-            <button><a href="contato.html">Contato</a></button>
+            <a class="logo" href="/">Proz Gourmet</a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+
+                <li><a href="./index.html">Início</a></li>
+                <li><a href="./menu.html" m>Menu</a></li>
+                <li><a href="./reservas.html">Reservas</a></li>
+                <li><a href="./sobre_nos.html">Sobre</a></li>
+                <li><a href="./contato.html">Contato</a></li>
+            </ul>
         </nav>
+
     </header>
 
     <main>
         <h2>SOBREMESAS</h2>
-        <img src="./img/img-sobremesa/sobremesa01-torta_choc_belga.jpeg" alt="Torta de Chocolate Belga" height="250">
-        <p>Um delicioso corte de <strong>Torta de chocolate belga</strong>, feita com cacau de alta
-            qualidade,
-            coberto com raspas de chocolate meio amargo e acompanhado de uma bola de sorvete de baunilha artesanal,
-            de cor branca pura, em um prato de porcelana preta. </p>
+        <section>
+            <img src="./img/img-sobremesa/sobremesa01-torta_choc_belga.jpeg" alt="Torta de Chocolate Belga" id="sobremesa-01">
+            <div id="text-drink">                <p>Um delicioso corte de <strong>Torta de chocolate belga</strong>, feita com cacau de alta
+                    qualidade,
+                    coberto com raspas de chocolate meio amargo e acompanhado de uma bola de sorvete de baunilha artesanal,
+                    de cor branca pura, em um prato de porcelana preta. </p>
+            </div>
 
-        <img src="./img/img-sobremesa/sobremesa02-tartelette-de-limao-Siciliano.jpeg" alt="Tartelette de Limão Siciliano"
-            height="250px">
-        <p>Uma <strong>Tartelette de limão</strong> delicadamente equilibrada, com um recheio de creme
-            de limão fresco e
-            decorada com raspas de limão siciliano e uma pitada de açúcar de confeiteiro. </p>
+            <img src="./img/img-sobremesa/sobremesa02-tartelette-de-limao-Siciliano.jpeg"
+                alt="Tartelette de Limão Siciliano" id="sobremesa-01">
+                <div id="text-drink">                <p>Uma <strong>Tartelette de limão</strong> delicadamente equilibrada, com um recheio de creme
+                    de limão fresco e
+                    decorada com raspas de limão siciliano e uma pitada de açúcar de confeiteiro. </p>
+            </div>
 
-        <img src="./img/img-sobremesa/sobremesa03-Crème-Brûlée-de-Lavanda.jpeg" alt="Crème Brûlée de Lavanda" height="250px">
-        <p><strong>Crème Brûlée de Lavanda</strong> um clássico francês com um toque sofisticado de
-            lavanda, apresentando uma textura cremosa e sutil aroma floral,
-            finalizado com uma fina camada de açúcar caramelizado.</p>
-        <br>
-        <img src="./img/img-sobremesa/torta-de-chocolate-com-calda.jpg" alt="Torta de chocolate com calda de caramelo" height="350">
-        <p><strong>Torta de chocolate com calda de caramelo</strong> - Começamos com uma base crocante e
-            irresistível.
-            Trituramos biscoitos de chocolate até obtermos uma textura fina e misturamos com manteiga derretida.
-            preparamos um caramelo dourado e sedoso. O açúcar é derretido até atingir uma cor âmbar, e então adicionamos
-            creme de leite fresco e uma pitada de flor de sal. Nossa ganache é feita com chocolate amargo picado e creme
-            de leite fresco. O chocolate é derretido e misturado com o creme até obtermos uma textura lisa e brilhante.
-        </p>
-        <br>
-        <img src="./img/img-sobremesa/mousse-maracuja.jpg" alt="Mousse de maacujá" height="350">
-        <p><strong>Mousse de Maracujá</strong> - Nosso mousse de maracujá é uma combinação perfeita de suavidade e
-            acidez. A textura é leve e aerada, derretendo na boca como um abraço tropical. Utilizamos suco de maracujá
-            fresco para criar a base do mousse. A acidez característica da fruta é equilibrada com o doce do leite
-            condensado e do creme de leite.</p>
+            <img src="./img/img-sobremesa/sobremesa03-Crème-Brûlée-de-Lavanda.jpeg" alt="Crème Brûlée de Lavanda" id="sobremesa-01">
+            <div id="text-drink">                <p><strong>Crème Brûlée de Lavanda</strong> um clássico francês com um toque sofisticado de
+                    lavanda, apresentando uma textura cremosa e sutil aroma floral,
+                    finalizado com uma fina camada de açúcar caramelizado.</p>
+            </div>
+            
+            <img src="./img/img-sobremesa/torta-de-chocolate-com-calda.jpg" alt="Torta de chocolate com calda de caramelo" id="sobremesa">
+            <div id="text-drink">                <p><strong>Torta de chocolate com calda de caramelo</strong> - Começamos com uma base crocante e
+                    irresistível.
+                    Trituramos biscoitos de chocolate até obtermos uma textura fina e misturamos com manteiga derretida.
+                    preparamos um caramelo dourado e sedoso. O açúcar é derretido até atingir uma cor âmbar, e então adicionamos
+                    creme de leite fresco e uma pitada de flor de sal. Nossa ganache é feita com chocolate amargo picado e creme
+                    de leite fresco. O chocolate é derretido e misturado com o creme até obtermos uma textura lisa e brilhante.
+                </p>
+            </div>
+            
+            <img src="./img/img-sobremesa/mousse-maracuja.jpg" alt="Mousse de maacujá" id="sobremesa">
+            <div id="text-drink">                <p><strong>Mousse de Maracujá</strong> - Nosso mousse de maracujá é uma combinação perfeita de suavidade e
+                    acidez. A textura é leve e aerada, derretendo na boca como um abraço tropical. Utilizamos suco de maracujá
+                    fresco para criar a base do mousse. A acidez característica da fruta é equilibrada com o doce do leite
+                    condensado e do creme de leite.</p>
+            </div>
+        </section>
 
     </main>
 
     <footer>
-        <ul>
-            <li>Facebook</li>
-            <li>Instagram</li>
-            <li>Linkedin</li>
-        </ul>
+        <div id="footer-content">
+            <div id="footer-contacts">
+
+                <br>
+                <div id="footer-social-media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Blog</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Receitas</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Dicas</a>
+                </li>
+
+            </ul>
+            <ul class="footer-list">
+                <li>
+                    <h3>Produtos</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Vinicula</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Hortaliças</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Preparo</a>
+                </li>
+            </ul>
+
+            <div id="footer-subscribe">
+                <h3>Subscribe</h3>
+                <p>
+                    Assine nossa newsletter
+                </p>
+
+                <div id="input-group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer-copyrigth">
+            &#169
+            ProzGourmet
+
+        </div>
+
     </footer>
 
 </body>

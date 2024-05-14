@@ -4,73 +4,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cardapio.css">
+    <link rel="stylesheet" href="./css/header-footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./script.js" defer></script>
     <title>Prato Principal</title>
 </head>
 
 <body>
     <header>
-        <span>ProzGourmet</span>
 
         <nav>
-            <button><a href="index.html">Página Inicial</a></button>
-            <button><a href="menu.html">Menu</a></button>
-            <button><a href="sobre_nos.html">Sobre Nós</a></button>
-            <button><a href="reservas.html">Reservas</a></button>
-            <button><a href="contato.html">Contato</a></button>
+            <a class="logo" href="/">Proz Gourmet</a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+
+                <li>
+                    <a href="./index.html">Início</a>
+                </li>
+                <li>
+                    <a href="./menu.html" m>Menu</a>
+                </li>
+                <li>
+                    <a href="./reservas.html">Reservas</a>
+                </li>
+                <li>
+                    <a href="./sobre_nos.html">Sobre</a>
+                </li>
+                <li>
+                    <a href="./contato.html">Contato</a>
+                </li>
+            </ul>
         </nav>
+
     </header>
 
     <main>
-        <h2>Prato Principal</h2>
-        <img src="./img/img-prato-princ/file-mingnon.jpg" alt="Prato Principal" height="300px">
-        <p>Nossos chefs selecionam os melhores cortes de <strong>Filé mignon</strong>Filé mignon para
-            criar esta
-            obra-prima. O molho de vinho tinto é a estrela deste prato. Preparamos um molho rico e encorpado, usando um
-            vinho tinto
-            seco de alta qualidade. Na mesma frigideira em que grelhamos os filés, adicionamos cebola picadinha e alho,
-            criando uma
-            base aromática.</p>
-        <br>
-        <img src="./img/img-prato-princ/risoto.jpg" alt="Prato Princial" height="300px">
-        <p><strong>Risoto de cogumelos com trufas</strong>- Os Cogumelos porcini, shiitake, shimeji e de
-            Paris se unem em uma dança de
-            sabores e texturas. Eles são refogados até liberarem seus aromas terrosos e se tornarem macios.Utilizamos
-            arroz carnaroli, conhecido por
-            sua capacidade de absorver líquidos e criar uma textura cremosa. O arroz é refogado com cebola e alho,
-            criando a base perfeita para o risoto. Um toque de vinho branco é adicionado ao arroz, evaporando para
-            deixar apenas sua essência. A estrela deste prato é o azeite de trufas. Ele é delicadamente regado sobre o
-            risoto, liberando seu aroma.Finalizamos com queijo grana padano ralado na hora. Sua textura granulada e
-            sabor salgado complementam os cogumelos e o arroz.</p>
-        <br>
-        <img src="./img/img-prato-princ/carre-de-cordeiro.jpg" alt=" Carré de cordeiro com crostas de Ervas" height="300px">
-        <p><strong>Carré de cordeiro</strong> - Nossos chefs selecionam cuidadosamente o Carré de
-            cordeiro, com seus três
-            ossinhos, garantindo a máxima qualidade , o carré é temperado com sal e pimenta-do-reino. A estrela deste
-            prato é a crosta de ervas frescas. Nossos chefs picam finamente tomilho, salsa e alho, criando uma
-            mistura aromática.</p>
-        <br>
-        <img src="./img/img-prato-princ/Tornedor-de-Filé-com-Foie Gras.jpg" alt="Tornedor de filé com foie Gras" height="300px">
-        <p><strong>Tornedor de Filé com Foie Gras</strong> - Buscamos melhores cortes de filé mignon
-            para criar os tornedores. Cada
-            pedaço é alto e
-            suculento, garantindo uma experiência memorável. O foie gras, também conhecido como fígado de pato ou ganso,
-            é uma iguaria luxuosa. O sabor é rico, com notas de nozes e um toque adocicado.</p>
-        <br>
-        <img src="./img/img-prato-princ/salmao-grelhado.jpg" alt="Salmão grelhado com purê de batata doce" height="300px">
-        <p><strong>Salmão grelhado com purê de batata doce</strong> - Nossos chefs selecionam os
-            melhores filés de salmão para criar essa obra-prima. Cada pedaço é grelhado até
-            ficar dourado por fora e incrivelmente macio por dentro. A carne é suculenta e repleta de sabor marinho.
-            Nosso purê é feito com batata-doce laranja, cozida até ficar macia e amassada até obter uma textura cremosa.
-        </p>
+
+        <h2>PRATO PRINCIPAL</h2>
+
+        <section>
+
+            <img src="./img/img-prato-princ/file-mingnon.jpg" alt="Prato Principal" id="prato">
+            <div id="text-drink">
+                <p>Nossos chefs selecionam os melhores cortes de <strong>Filé mignon</strong>Filé mignon para
+                    criar esta
+                    obra-prima. O molho de vinho tinto é a estrela deste prato. Preparamos um molho rico e encorpado,
+                    usando um
+                    vinho tinto
+                    seco de alta qualidade. Na mesma frigideira em que grelhamos os filés, adicionamos cebola picadinha
+                    e alho,
+                    criando uma
+                    base aromática.</p>
+            </div>
+
+            <img src="./img/img-prato-princ/risoto.jpg" alt="Prato Princial" id="prato">
+            <div id="text-drink">
+
+                <p><strong>Risoto de cogumelos com trufas</strong>- Os Cogumelos porcini, shiitake, shimeji e de
+                    Paris se unem em uma dança de
+                    sabores e texturas. Eles são refogados até liberarem seus aromas terrosos e se tornarem
+                    macios.Utilizamos
+                    arroz carnaroli, conhecido por
+                    sua capacidade de absorver líquidos e criar uma textura cremosa. O arroz é refogado com cebola e
+                    alho,
+                    criando a base perfeita para o risoto. Um toque de vinho branco é adicionado ao arroz, evaporando
+                    para
+                    deixar apenas sua essência. A estrela deste prato é o azeite de trufas. Ele é delicadamente regado
+                    sobre o
+                    risoto, liberando seu aroma.Finalizamos com queijo grana padano ralado na hora. Sua textura
+                    granulada e
+                    sabor salgado complementam os cogumelos e o arroz.</p>
+            </div>
+
+            <img src="./img/img-prato-princ/carre-de-cordeiro.jpg" alt=" Carré de cordeiro com crostas de Ervas" id="prato">
+            <div id="text-drink">
+
+                <p><strong>Carré de cordeiro</strong> - Nossos chefs selecionam cuidadosamente o Carré de
+                    cordeiro, com seus três
+                    ossinhos, garantindo a máxima qualidade , o carré é temperado com sal e pimenta-do-reino. A estrela
+                    deste
+                    prato é a crosta de ervas frescas. Nossos chefs picam finamente tomilho, salsa e alho, criando uma
+                    mistura aromática.</p>
+            </div>
+
+            <img src="./img/img-prato-princ/Tornedor-de-Filé-com-Foie Gras.jpg" alt="Tornedor de filé com foie Gras" id="prato">
+            <div id="text-drink">
+
+                <p><strong>Tornedor de Filé com Foie Gras</strong> - Buscamos melhores cortes de filé mignon
+                    para criar os tornedores. Cada
+                    pedaço é alto e
+                    suculento, garantindo uma experiência memorável. O foie gras, também conhecido como fígado de pato
+                    ou ganso,
+                    é uma iguaria luxuosa. O sabor é rico, com notas de nozes e um toque adocicado.</p>
+            </div>
+
+            <img src="./img/img-prato-princ/salmao-grelhado.jpg" alt="Salmão grelhado com purê de batata doce" id="prato">
+            <div id="text-drink">
+
+                <p><strong>Salmão grelhado com purê de batata doce</strong> - Nossos chefs selecionam os
+                    melhores filés de salmão para criar essa obra-prima. Cada pedaço é grelhado até
+                    ficar dourado por fora e incrivelmente macio por dentro. A carne é suculenta e repleta de sabor
+                    marinho.
+                    Nosso purê é feito com batata-doce laranja, cozida até ficar macia e amassada até obter uma textura
+                    cremosa.
+                </p>
+            </div>
+
+        </section>
     </main>
 
 
     <footer>
-        <ul>
-            <li>Facebook</li>
-            <li>Instagram</li>
-            <li>Linkedin</li>
-        </ul>
+        <div id="footer-content">
+            <div id="footer-contacts">
+
+                <br>
+                <div id="footer-social-media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Blog</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Receitas</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Dicas</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Trilha Sonora</a>
+                </li>
+            </ul>
+            <ul class="footer-list">
+                <li>
+                    <h3>Produtos</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Vinicula</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Hortaliças</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Preparo</a>
+                </li>
+            </ul>
+
+            <div id="footer-subscribe">
+                <h3>Subscribe</h3>
+                <p>
+                    Assine nossa newsletter
+                </p>
+
+                <div id="input-group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer-copyrigth">
+            &#169
+            ProzGourmet
+
+        </div>
+
+
     </footer>
 
 </body>
