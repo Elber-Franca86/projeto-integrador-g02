@@ -38,6 +38,11 @@ main section img {
   padding: 5px;
 }
 
+main button {
+  background-image: url(../img/textura-03.jpg);
+  border: none;
+}
+
 #text-drink {
   text-align: center, justify;
   padding: 10px;
