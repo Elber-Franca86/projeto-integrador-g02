@@ -12,10 +12,12 @@
 :root {
   --color-neutral-0: #0e0c0c;
   --color-neutral-10: #171717;
-  --color-neutral-20:#555b6e;
+  --color-neutral-20: #555b6e;
   --color-neutral-30: #a8a29e;
-  --color-neutral-35:#D2CFCD;
+  --color-neutral-35: #D2CFCD;
   --color-neutral-40: #f5f5f5;
+  --color-neutral-45: #ffffff;
+
 }
 
 
@@ -42,9 +44,9 @@ nav {
   justify-content: space-around;
   align-items: center;
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-  font-size: 1rem;
+  font-size: 1.1rem;
   background-color: var(--color-neutral-40);
-  height: 8vh;
+  height: 15vh;
   position: relative;
   z-index: 1;
 }
@@ -63,6 +65,7 @@ nav {
   display: none;
   cursor: pointer;
 }
+
 .mobile-menu div {
   width: 32px;
   height: 2px;
@@ -79,6 +82,7 @@ nav {
   .logo {
     color: #000000;
   }
+
   .nav-list {
     position: absolute;
     top: 8vh;
@@ -91,17 +95,19 @@ nav {
     justify-content: space-around;
     transform: translateX(100%);
     transition: transform 0.3s ease-in;
-    
+
   }
+
   .nav-list li {
     margin-left: 0;
     opacity: 0;
     color: #f5f5f5;
   }
+
   .mobile-menu {
     display: block;
   }
-  
+
 }
 
 .nav-list.active {
@@ -113,6 +119,7 @@ nav {
     opacity: 0;
     transform: translateX(50px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -139,153 +146,154 @@ nav {
 
 /*RODAPÉ*/
 footer {
-    font-family: 'Inter', sans-serif;
-    box-sizing: border-box;
-    letter-spacing: 1px;
-    width: 100%;
-    height: 50%;
+
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  width: 100%;
+  height: 50%;
+  color: var(--color-neutral-0);
+}
+
+.footer-link {
+  /*remover text decoration dos icones*/
+  text-decoration: none;
+}
+
+#footer-content {
+  background-color: var(--color-neutral-40);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /*define colunas*/
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: -5px;
+  padding-bottom: -5px;
+}
+
+/**/
+#footer-contacts h1 {
+  margin-bottom: 0rem;
+}
+
+/*ICONES*/
+#footer-social-media {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+#footer-social-media .footer-link {
+  /*espaçamento e alinhamento dos icones*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  color: var(--color-neutral-40);
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+
+#footer-social-media .footer-link i {
+  font-size: 1.25rem;
+}
+
+#footer-social-media .footer-link:hover {
+  /*alteração no hover*/
+  opacity: 0.8;
+}
+
+#instagram {
+  background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook {
+  background-color: #4267d3;
+}
+
+#whatsapp {
+  background-color: #25d366;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  list-style: none;
+  padding: 8px;
+}
+
+.footer-list .footer-link {
+  color: var(--color-neutral-10);
+}
+
+.footer-list .footer-link:hover {
+  color: #7f37c9;
+  transition: all 0.4s;
+}
+
+#footer-subscribe {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+
+  p {
     color: var(--color-neutral-0);
   }
-  
-  .footer-link {
-    /*remover text decoration dos icones*/
-    text-decoration: none;
+}
+
+#input-group {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-neutral-35);
+  border-radius: 4px;
+
+  input {
+    all: unset;
+    padding: 0.7rem;
+    width: 100%;
   }
-  
-  #footer-content {
-    background-color: var(--color-neutral-40);
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    /*define colunas*/
-    padding-left: 18px;
-    padding-right: 18px;
-    padding-top: -5px;
-    padding-bottom: -5px;
-  }
-  
-  /**/
-  #footer-contacts h1 {
-    margin-bottom: 0rem;
-  }
-  
-  /*ICONES*/
-  #footer-social-media {
-    display: flex;
-    gap: 2rem;
-    margin-top: 1rem;
-  }
-  
-  #footer-social-media .footer-link {
-    /*espaçamento e alinhamento dos icones*/
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 2.5rem;
-    width: 2.5rem;
+
+  button {
+    background-color: #7f37c9;
+    border: none;
     color: var(--color-neutral-40);
-    border-radius: 50%;
-    transition: all 0.4s;
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
   }
-  
-  #footer-social-media .footer-link i {
-    font-size: 1.25rem;
-  }
-  
-  #footer-social-media .footer-link:hover {
-    /*alteração no hover*/
+
+  button:hover {
     opacity: 0.8;
   }
-  
-  #instagram {
-    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#footer-copyrigth {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-neutral-40);
+  font-size: 0.9rem;
+  padding: 0px;
+  font-weight: 10;
+}
+
+
+/*deixando responsivo*/
+@media screen and (max-width: 768px) {
+  #footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
   }
-  
-  #facebook {
-    background-color: #4267d3;
+
+}
+
+@media screen and (max-width: 426px) {
+  #footer-content {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 3rem 2rem;
   }
-  
-  #whatsapp {
-    background-color: #25d366;
-  }
-  
-  .footer-list {
-    display: flex;
-    flex-direction: column;
-    gap: 0.7rem;
-    list-style: none;
-    padding: 8px;
-  }
-  
-  .footer-list .footer-link {
-    color: var(--color-neutral-10);
-  }
-  
-  .footer-list .footer-link:hover {
-    color: #7f37c9;
-    transition: all 0.4s;
-  }
-  
-  #footer-subscribe {
-    padding: 8px;
-    display: flex;
-    flex-direction: column;
-  
-    p {
-      color: var(--color-neutral-0);
-    }
-  }
-  
-  #input-group {
-    display: flex;
-    align-items: center;
-    background-color: var(--color-neutral-35);
-    border-radius: 4px;
-  
-    input {
-      all: unset;
-      padding: 0.7rem;
-      width: 100%;
-    }
-  
-    button {
-      background-color: #7f37c9;
-      border: none;
-      color: var(--color-neutral-40);
-      padding: 0px 1.25rem;
-      font-size: 1.125rem;
-      height: 100%;
-      border-radius: 0px 4px 4px 0px;
-      cursor: pointer;
-    }
-  
-    button:hover {
-      opacity: 0.8;
-    }
-  }
-  
-  #footer-copyrigth {
-    display: flex;
-    justify-content: center;
-    background-color: var(--color-neutral-40);
-    font-size: 0.9rem;
-    padding: 0px;
-    font-weight: 10;
-  }
-  
-  
-  /*deixando responsivo*/
-  @media screen and (max-width: 768px) {
-    #footer-content {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2rem;
-    }
-  
-  }
-  
-  @media screen and (max-width: 426px) {
-    #footer-content {
-      grid-template-columns: repeat(1, 1fr);
-      padding: 3rem 2rem;
-    }
-  
-  }
+
+}
