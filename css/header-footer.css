@@ -32,7 +32,7 @@ a:hover {
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 28px;
   font-family: "Montserrat Alternates", sans-serif;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -46,7 +46,7 @@ nav {
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
   font-size: 1.1rem;
   background-color: var(--color-neutral-40);
-  height: 15vh;
+  height: 12vh;
   position: relative;
   z-index: 1;
 }
@@ -214,6 +214,9 @@ footer {
 
 #whatsapp {
   background-color: #25d366;
+}
+#twitter {
+  background-color: #000000;
 }
 
 .footer-list {

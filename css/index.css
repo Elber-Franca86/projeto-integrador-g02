@@ -28,7 +28,8 @@ main {
   padding-bottom: 1rem;
   margin-right: 25rem;
   margin-left: 25rem;
-  background-color: var(--color-neutral-35);
+  opacity: 80%;
+  background-color: var(--color-neutral-40);
   border-radius: 10px;
   text-align: center;
   font-size: 1rem;
@@ -50,16 +51,8 @@ main {
   }
 }
 @media screen and (max-width: 1080px) {
-  #text-index {
+   #text-index {
     padding: 0%;
     margin: 0rem;
-  }
-}
-@media screen and (max-width: 700px) {
-  #img-rest {
-    width: 100%;
-    height: auto;
-    padding: 0rem;
-    margin: 0px; 
   }
 }

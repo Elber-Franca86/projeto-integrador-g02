@@ -28,7 +28,8 @@ h2 {
     font-size: 26px;
     text-align: center;
     margin-top: 4vh;
-    background-color: var(--color-neutral-35);
+    opacity: 80%;
+    background-color: var(--color-neutral-40);
     border-radius: 10px;
 }
 
