@@ -31,7 +31,9 @@ main h2 {
   font-size: 1rem;
   padding: 12px;
   padding-bottom: 2vw;
-  border-radius: 10%;
-  opacity: 68%;
-  background-color: var(--color-neutral-35);
+  margin-left: 2vh;
+  margin-right: 2vh;
+  border-radius: 50px;
+  opacity: 80%;
+  background-color: var(--color-neutral-40);
 }
