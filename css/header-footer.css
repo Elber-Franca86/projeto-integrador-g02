@@ -284,7 +284,7 @@ footer {
 }
 
 
-/*deixando responsivo*/
+/*responsividade*/
 @media screen and (max-width: 768px) {
   #footer-content {
     grid-template-columns: repeat(2, 1fr);
