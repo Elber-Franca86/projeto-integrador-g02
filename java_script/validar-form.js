@@ -21,7 +21,7 @@ nomeInput.addEventListener("change", (evento) => {
   let valorInput = evento.target.value;
   console.log(valorInput.length);
 
-  if (valorInput.length < 6) {
+  if (valorInput.length < 7) {
     // Valor
     console.log("Informe ao menos um Sobrenome.");
     nomeInput.classList.add("error");
@@ -53,16 +53,49 @@ emailInput.addEventListener("change", (e) => {
 
   if (valorInput.includes("@") && valorInput.includes(".com")) {
     // valor correto
-    console.log("Valor Correto!");
-    emailInput.classList.add("correct");
-    emailHelper.classList.remove("visible");
+    console.log("Valor Correto!")
+    emailInput.classList.add("correct")
+    emailHelper.classList.remove("visible")
   } else {
     // valor incorreto
     console.log("o email deve conter @ e .com");
 
-    emailInput.classList.add("error");
-    emailHelper.classList.add("visible");
-    emailInput.classList.remove("correct");
+    emailInput.classList.add("error")
+    emailHelper.classList.add("visible")
+    emailInput.classList.remove("correct")
     emailHelper.innerText = "O email deve conter @ e .com";
   }
 });
+
+
+// ---------Máscara para telefone---------//
+const campoContato = document.getElementById("contato");
+
+campoContato.addEventListener('keyup', mascaraTelefone); //aciona quando o usuario pressiona e solta a tecla
+
+function mascaraTelefone(e){
+
+  const tecla = e.keyCode; //captura tecla
+
+  if(tecla == 8){
+    return false;
+  }
+
+  const telefone = campoContato.value
+
+  if(telefone.length == 1){
+    campoContato.value = "(" + telefone
+    return true;
+  }
+
+  if(telefone.length == 3){
+    campoContato.value = telefone + ")"
+    return true;
+  }
+  
+  if(telefone.length == 9){
+    campoContato.value = telefone + "-"
+    return true;
+  }
+
+};
