@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <script src="./script.js" defer></script> -->
+    <script src="./script.js" defer></script>
+    <script src="./validar-form.js" defer></script>
     <title>Reservas</title>
 </head>
 
@@ -49,23 +50,63 @@
         <h2>Faça sua reserva!</h2>
 
 
-        <form action="" id="cliente">
+        <form action="" id="cliente" method="get" autocomplete="on">
 
-                
             <div>
                 <label for="nome">
-                        <i class="fa-solid fa-file-signature"></i>
+                    <i class="fa-solid fa-file-signature"></i>
+                </label>
+                <input type="text" id="nome" name="nome">
+                <p id="nome-helper" class="helper-text">Mensagem de ajuda</p>
+            </div>
+
+            <div>
+                <label for="email">
+                    <i class="fa-regular fa-envelope"></i>
+                </label>
+                <input type="email" id="email" name="email" autocomplete="email">
+                <p id="email-helper" class="helper-text">Mensagem de ajuda</p>
+            </div>
+
+            <div>
+                <label for="tel">
+                
+                        <i class="fa-solid fa-phone"></i>
                     
                 </label>
+                <input type="tel" name="tel" id="tel" autocomplete="tel">
+            
+            </div>
+
+            <div>
+                <label for="data">
+                    <i class="fa-regular fa-calendar-days"></i>
+                </label>
+                <input id="data" name="data" type="date" aria-colcount="10">
+            </div>
+
+            <div>
+                <label for="clock">
+                    <i class="fa-regular fa-clock"></i>
+                </label>
+                <input id="clock" name="clock" type="time" aria-colcount="10">
+            </div>
+
+
+            <!-- <div>
+                <label for="nome">
+                        <i class="fa-solid fa-file-signature"></i>
+                </label>
                 <input type="text" name="nome" id="nome">
+                <p id="nome-helper" class="helper-text">Mensagem de ajuda</p>
             </div>
         
             <div>
                 <label for="email">
                         <i class="fa-regular fa-envelope"></i>
-                    
-                </label>
+            </label>
                 <input type="email" name="email" id="email">
+                <p id="email-helper" class="helper-text">Mensagem de ajuda</p>
             </div>
 
             
@@ -92,10 +133,10 @@
                     <i class="fa-regular fa-clock"></i>
                 </label>
                 <input id="clock" name="clock" type="time" aria-colcount="10">
-            </div>
+            </div> -->
 
-             
-            <div  id="Mesas">
+
+            <div id="Mesas">
                 <label>Mesas:</label>
                 <select>
                     <option selected disabled value="">Selecione</option>
@@ -110,16 +151,16 @@
             </div>
 
 
-        
+
             <button type="submit">Enviar</button>
 
             <section id="formulario">
                 <h3>Dúvidas ou sugestões:</h3>
                 <form action="">
-                  
-                  <label for="mensagem">Mensagem:</label>
-                  <textarea name="mensagem" id="mensagem" cols="100" rows="10"></textarea>
-                  <button type="submit" id="enviar">Enviar</button>
+
+                    <label for="mensagem"></label>
+                    <textarea name="mensagem" id="mensagem" cols="100" rows="10"></textarea>
+                    <button type="submit" id="enviar">Enviar</button>
                 </form>
             </section>
 
@@ -162,7 +203,7 @@
                 <li>
                     <a href="#" class="footer-link">Dicas</a>
                 </li>
-                
+
             </ul>
             <ul class="footer-list">
                 <li>

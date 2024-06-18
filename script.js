@@ -1,3 +1,4 @@
+
 // Menu hamburguer
 class MobileNavbar {
   constructor(mobileMenu, navList, navLinks) {
@@ -45,7 +46,6 @@ const mobileNavbar = new MobileNavbar(
 mobileNavbar.init();
 
 
-
 // Slide Main
 document.querySelector("button").addEventListener("click", function () {
   document.querySelector(".form").classList.toggle("hide");
@@ -72,3 +72,5 @@ function showSlides() {
   dots[slideIndex - 1].className += " active";
   setTimeout(showSlides, 3000);
 }
+
+
