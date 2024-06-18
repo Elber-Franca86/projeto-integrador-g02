@@ -44,8 +44,9 @@ main section img {
 }
 
 main button {
-  background-image: url(../img/textura-03.jpg);
-  border: none;
+  background-color: var(--color-neutral-35);
+  border-radius: 5px;
+  align-items: first baseline;
 }
 
 #text-drink {
