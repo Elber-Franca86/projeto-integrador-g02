@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="./script.js" defer></script>
-    <script src="./validar-form.js" defer></script>
+    <script src="./java_script/script.js"defer></script>
+    <script src="./java_script/validar-form.js" defer></script>
     <title>Reservas</title>
 </head>
 
@@ -70,11 +70,10 @@
 
             <div>
                 <label for="tel">
-                
-                        <i class="fa-solid fa-phone"></i>
-                    
+                    <i class="fa-solid fa-phone"></i>
                 </label>
-                <input type="tel" name="tel" id="tel" autocomplete="tel">
+                <input type="tel" name="tel" id="contato" maxlength="14">
+                <p id="tel-helper" class="helper-text">Mensagem de ajuda</p>
             
             </div>
 
@@ -91,50 +90,6 @@
                 </label>
                 <input id="clock" name="clock" type="time" aria-colcount="10">
             </div>
-
-
-            <!-- <div>
-                <label for="nome">
-                        <i class="fa-solid fa-file-signature"></i>
-                </label>
-                <input type="text" name="nome" id="nome">
-                <p id="nome-helper" class="helper-text">Mensagem de ajuda</p>
-            </div>
-        
-            <div>
-                <label for="email">
-                        <i class="fa-regular fa-envelope"></i>
-            </label>
-                <input type="email" name="email" id="email">
-                <p id="email-helper" class="helper-text">Mensagem de ajuda</p>
-            </div>
-
-            
-        
-            <div>
-                <label for="tel">
-                
-                        <i class="fa-solid fa-phone"></i>
-                    
-                </label>
-                <input type="tel" name="tel" id="tel">
-            </div>
-            
-
-            <div>
-                <label for="data">
-                    <i class="fa-regular fa-calendar-days"></i>
-                </label>
-                <input id="data" name="data" type="date" aria-colcount="10">
-            </div>
-
-            <div>
-                <label for="clock">
-                    <i class="fa-regular fa-clock"></i>
-                </label>
-                <input id="clock" name="clock" type="time" aria-colcount="10">
-            </div> -->
-
 
             <div id="Mesas">
                 <label>Mesas:</label>
