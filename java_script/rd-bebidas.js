@@ -1,7 +1,7 @@
 const arrayBebida = [
     {
         image: "./img/img-bebidas/vinho-Aura-del_Sol.jpeg",
-        texto: "Uma expressão encantadora da região vinícola do Vale Central do <strong>Chile</strong>. Combinando uvas cuidadosamente selecionadas, este vinho tinto revela notas intensas de frutas vermelhas maduras e sutis nuances de especiarias. Sua textura suave e final persistente tornam-no uma escolha excepcional para acompanhar pratos gourmet em nosso restaurante.",
+        texto: " <strong>Aura del Sol</strong> apresenta uma expressão encantadora da região vinícola do Vale Central do <strong>Chile</strong>. Combinando uvas cuidadosamente selecionadas, este vinho tinto revela notas intensas de frutas vermelhas maduras e sutis nuances de especiarias. Sua textura suave e final persistente tornam-no uma escolha excepcional para acompanhar pratos gourmet em nosso restaurante.",
     },
 
     {
