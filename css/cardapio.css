@@ -84,3 +84,7 @@ main button {
   width: 350px;
   border-radius: 15%;
 }
+
+button {
+  font-size: medium;
+}
